@@ -515,11 +515,7 @@
 %% For subscripts in text mode
 \newcommand{\subscr}[1]{$_{\text{#1}}$}
 %% Allow newline breaks in a table cell = Multi-Line-Cell = mlc
-%%  syntax is \mlc{first line\\second line}
+%%  syntax is \mlc{first line\\second line\\more if necessary..}
 %% Don't change the name of this, as it is embedded in R xtable code.
 \newcommand{\mlc}[2][c]{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
-\newcommand{\Avuln}{Age-at-50\%-vulnerability}
-\newcommand{\Amat}{Age-at-50\%-maturity}
-\newcommand{\Bmsy}{B_\mathrm{MSY}}
-\newcommand{\umsy}{u_\mathrm{MSY}}
 %% ------------------------------------------------------------------------------
