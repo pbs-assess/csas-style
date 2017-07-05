@@ -452,13 +452,13 @@
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage{linegoal}
-% A \Let command for defining assignments within the algorithmic environment which
-% supports automatic indentation when the second argument is too long to fit
-% on one line
+%% A \Let command for defining assignments within the algorithmic environment
+%%  which supports automatic indentation when the second argument is too long to
+%%  fit on one line
 \newcommand*{\Let}[2]{\State #1 $\gets$
 \parbox[t]{\linegoal}{#2\strut}}
-% A \State command that supports automatic indentation when the argument's
-% content is too long to fit on one line
+%% A \State command that supports automatic indentation when the argument's
+%% content is too long to fit on one line
 \newcommand*{\LongState}[1]{\State
 \parbox[t]{\linegoal}{#1\strut}}
 %% ------------------------------------------------------------------------------
