@@ -284,6 +284,22 @@
 %%  to the top.
 \setlength\@fptop{0pt}
 
+%% From hake.sty:
+%% Change default options for float rules for figure and tables, from:
+%%  http://www.tex.ac.uk/FAQ-floats.html  . Also see p55 of
+%%  http://tug.ctan.org/tex-archive/info/epslatex/english/epslatex.pdf
+%%  Allows a larger percentage of a page to be a figure than in the defaults
+\renewcommand{\topfraction}{.85}
+\renewcommand{\bottomfraction}{.7}
+\renewcommand{\textfraction}{.15}
+\renewcommand{\floatpagefraction}{.66}
+\renewcommand{\dbltopfraction}{.66}
+\renewcommand{\dblfloatpagefraction}{.66}
+\setcounter{topnumber}{9}
+\setcounter{bottomnumber}{9}
+\setcounter{totalnumber}{20}
+\setcounter{dbltopnumber}{9}
+
 %% Make all minipages be ragged right like the main text
 \let\@minipagerestore=\raggedright
 
