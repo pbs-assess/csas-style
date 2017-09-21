@@ -896,7 +896,7 @@ FUNCTION {format.journal.pages}
     { swap$ duplicate$ empty$
         { pop$ pop$ format.pages }
         {
-          ": " *
+          ". " *
           swap$
           n.dashify
           "pages" bibinfo.check
@@ -911,7 +911,7 @@ FUNCTION {format.journal.eid}
   duplicate$ empty$ 'pop$
     { swap$ duplicate$ empty$ 'skip$
       {
-          ": " *
+          ". " *
       }
       if$
       swap$ *
@@ -925,7 +925,6 @@ FUNCTION {format.vol.num.pages}
       "volume" bibinfo.check
     }
   if$
-  %%bolden %%(RH 150707)
   number "number" bibinfo.check duplicate$ empty$ 'skip$
     {
       swap$ duplicate$ empty$
@@ -1666,4 +1665,4 @@ FUNCTION {end.bib}
 EXECUTE {end.bib}
 %% End of customized bst file
 %%
-%% End of file `resDoc.bst'.
+%% End of file `resDoc-rh.bst'.
