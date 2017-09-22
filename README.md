@@ -1,6 +1,12 @@
 # csas-style
 Latex style files for CSAS research documents
 
+## Branches
+
+**temp** - Andy updating .sty and including a .bst. Separate branch from master so as to not mess up the Herring assessment.
+
+## Files
+
 **res-doc.sty** - formatting style file 
 
 **res-doc.bst** - bibliography style file
