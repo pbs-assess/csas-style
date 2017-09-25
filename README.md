@@ -3,7 +3,7 @@ Latex style files for CSAS Research Documents
 
 # Checklist
 
-For final CSAP submission of Research Document, check the points in **Bibliography** and **Further CSAS rules** below. 
+For final CSAP submission of Research Document, check the points in **Bibliography** and **Further CSAS rules** below.
 
 ## Branches
 
@@ -53,10 +53,11 @@ Partly from doing Redbanded Rockfish formatting edits:
 
 1. Personal communications need a work location also; e.g. (Stephen Wischniowski, Pacific Biological Station, DFO, Nanaimo, BC, pers.~comm.)
 
+1. Postscript files (**.eps**) caused issues with screen readers reading out the axes labels etc. Seems that **.png** or (I think) **.pdf**) do not, so use those instead with **\includegraphics**. Andy now using **pdflatex** (and viewing in ghostview) rather than **latex** and **dvips**. 
 
 ## Notes and email from Brittany (ex-CSAP formatting expert) 
 
-**Andy just copying these and briefly editing here for now so that we have one copy. Will need tidying up, and some things have likely been automatically fixed with our .sty file**
+**Andy just copying these and briefly editing here for now so that we have one copy. Will need tidying up, and some things have likely been automatically fixed with our .sty file.**
 
 ### Brittany's email to Andy on 11th May 2017, regarding advice/rules for latex authors, with edits by Andy in [..]:
 
