@@ -3,7 +3,7 @@ Latex style files for CSAS Research Documents
 
 # Checklist
 
-For final CSAP submission of Research Document, check the points in **Bibliography** and **Tips and tricks** below. 
+For final CSAP submission of Research Document, check the points in **Bibliography** and **Further CSAS rules** below. 
 
 ## Branches
 
@@ -26,7 +26,7 @@ Issue #4.
 
 1. For Redbanded Rockfish assessment, the .bbl file incorrectly strips out hyphens in hyphenated first names. See Issue #5. If not fixed then check yourself. 
 
-## Tips and tricks
+## Further CSAS rules
 
 Partly from doing Redbanded Rockfish formatting edits:
 
