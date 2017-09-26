@@ -53,7 +53,11 @@ Partly from doing Redbanded Rockfish formatting edits:
 
 1. Personal communications need a work location also; e.g. (Stephen Wischniowski, Pacific Biological Station, DFO, Nanaimo, BC, pers.~comm.)
 
-1. Postscript files (**.eps**) caused issues with screen readers reading out the axes labels etc. Seems that **.png** or (I think) **.pdf**) do not, so use those instead with **\includegraphics**. Andy now using **pdflatex** (and viewing in ghostview) rather than **latex** and **dvips**. 
+1. Postscript files (**.eps**) caused issues with screen readers reading out the axes labels etc. Seems that **.png** do not, so use those instead with **\includegraphics**. Damn - **.pdf** apparently don't work either. Andy now using **pdflatex** (and viewing in ghostview) rather than **latex** and **dvips**. And to convert existing **.pdf** files to **.png** this is working fine, using ImageMagick:
+
+		magick convert -density 600 plot_Y_obs.pdf plot_Y_obs.png
+
+	Resolution almost as good as **.eps**, with the resulting **.png** only 62kB.
 
 ## Notes and email from Brittany (ex-CSAP formatting expert) 
 
