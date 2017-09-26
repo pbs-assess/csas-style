@@ -57,7 +57,7 @@ Partly from doing Redbanded Rockfish formatting edits:
 
 		magick convert -density 600 plot_Y_obs.pdf plot_Y_obs.png
 
-	Resolution almost as good as **.eps**, with the resulting **.png** only 62kB.
+	Resolution almost as good as **.pdf**, with the resulting **.png** only 62kB. Works for converting **.eps** also.
 
 ## Notes and email from Brittany (ex-CSAP formatting expert) 
 
