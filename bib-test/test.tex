@@ -1,0 +1,38 @@
+% test.tex - testing Issue #4 concerning order of multi-author references.
+\documentclass[11pt]{book}
+
+\usepackage{../res-doc}
+\usepackage{pdfcomment}
+
+%\usepackage{lineno}
+%\linenumbers
+
+\begin{document}
+
+% \starredchapter{APPENDIX~\thechapter. ASSESSMENT SCHEDULE AND INTERIM YEARS BETWEEN ASSESSMENTS}
+% \label{chap:interim}
+% \lfoot{\fishname~5ABC}
+% \rfoot{Appendix~\thechapter~-- Interim Years}
+
+
+
+There is no set schedule for assessments of the POP 5ABC stock, with the most recent three assessments being for the start of 2017 (this assessment), 2010 \citep{esh12} and 2001 (for Goose Island Gully only, extrapolated to the full coast; \citealt{shks01}). It may be expected that the next full stock assessment will therefore be in five to seven years.
+
+Many DFO assessments are moving to a multi-year schedule (rather than being conducted every year) to provide stability to harvesters and reduce the frequency of peer-reviewed stock assessments \citep{dfo16}. Consequently, \citet{dfo16} provided guidelines for producing updates for the interim years between full stock assessments. These guidelines include evaluating indicators that are proxies of stock status, and defining trigger values that are `thresholds of an indicator which if crossed would signal a change in stock status that may warrant a re-assessment ahead of schedule or changes to management measures ...'. 
+
+Potential indicators come from the data inputs to the assessment model. The QCS synoptic survey is the only ongoing survey that is explicitly designed to provide an index for groundfish species in 5ABC. The QCS shrimp survey is used in the model, but has a large coefficient of variation and provides a noisy signal that does not appear to closely track the estimated biomass of POP (Figure~E.1) and therefore is not appropriate as a potential interim-year indicator. The otoliths for the ageing data are only analysed when an assessment is due, and so cannot be used on an interim basis. The other model input is the time series of annual catches, which can be updated fairly easily each year. But this is not used in the model as a stock index and so is not a suitable indicator. 
+Similarly, catch-per-unit-effort data are not suitable as an index becuase, 
+particularly in a multi-species fishery, catches of a single species can change
+for a variety of reasons.
+
+Thus, only the QCS synoptic survey appears suitable as a potential indicator. The survey is currently scheduled for 2017, 2019, 2021, ... . However, even though the survey index is a prime input to the model, it is not always an accurate estimate of the estimated spawning biomass (e.g. years 2003 and 2007 Figure E.1). This suggests that a change in the survey index for a year or two may not be representative of a change in the biomass. Waiting for three survey indices means requiring the 2021 survey, by which time (or shortly after) the next full assessment will likely be requested. Also, deriving the survey estimate is not a trivial task (Appendix~B).
+
+To properly ascertain a suitable trigger point would require simulation testing to ensure that the trigger is not too easily crossed when in fact the biomass has not substantially changed, or it is not crossed when in fact the biomass has substantially changed. In particular, such simulations would have to consider the uncertainty in the survey estimate and the Bayesian uncertainty in the survey catchability parameter ($q_2$). There were not resources available to conduct such simulations. 
+
+We suggest the next full stock assessment be scheduled for 2022, such that there will be three new indices from the QCS synoptic survey and five years of ageing and catch data. For reasons noted above, we are unable to propose indicators that could be monitored in the interim years. But we do note that \emph{advice} for the interim years is explicitly included in this assessment in the form of the decision tables.
+
+\bibliographystyle{../res-doc}
+\bibliography{test}
+
+
+\end{document}
