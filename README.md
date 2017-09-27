@@ -9,7 +9,7 @@ For final CSAP submission of Research Document, check the points in **Bibliograp
 
 **temp** - Andy updating .sty and including a .bst. Separate branch from master so as to not mess up the Herring assessment.
 
-**bib-testing** - Andy creating off **temp**, to create a minimal working example to demonstrate the ordering of multi-author papers. Sean will have a stab at fixing the order (Issue #4). 
+**bit-testing** [typo - was meant to be **bib-testing**] - Andy creating off **temp**, to create a minimal working example to demonstrate the ordering of multi-author papers. Sean will have a stab at fixing the order (Issue #4). 
 
 ## Files
 
