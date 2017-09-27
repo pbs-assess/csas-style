@@ -28,27 +28,41 @@
 
 \begin{document}
 
-% \starredchapter{APPENDIX~\thechapter. ASSESSMENT SCHEDULE AND INTERIM YEARS BETWEEN ASSESSMENTS}
+% \starredchapter{APPENDIX~\thechapter. ASSESSMENT SCHEDULE AND INTERIM YEARS 
+%  BETWEEN ASSESSMENTS}
 % \label{chap:interim}
 % \lfoot{\fishname~5ABC}
 % \rfoot{Appendix~\thechapter~-- Interim Years}
 
 Simplest for me to just reference mostly my own papers/assessments as I know of
-some good examples of the issue. 
+some good examples of the issue.
 
 \citet{eb96} and \citet{eb99} did some stuff. So did \citet{eb01}. 
 
-Check how this comes out, since same three authors and the same year! Don't think
-there is a hard rule for that.
-\citet{ebp00a} and \citet{ebp00b} are by someone else, the a and b are hardwired in .bib file.
-
-Also \citet{epb00} a year earlier.
+This comes out fine, since same three authors (though not in same order) 
+and the same year, so makes sense to order by the second author (since the same 
+year).
+\citet{ebp00} and \citet{epb00} -- different Edwards, so are listed at the very 
+end (alphabetical by first initial).
 
 There are more refs \citep{edwa01, edwa08, efbj12}.
 
-Some assessments with similar authors are \citet{ehs12, ehs14area3CD, ehs14area5DE}; the latter are again the same three authors and same year.
+Some assessments with similar authors are 
+\citet{ehs12, ehs14area5DE, ehs14area3CD}; the latter are again the same three 
+authors and same year.
 
-More are \citet{ehs15, eps02, epw01, esh12, erpbb17}.
+More are \citet{ehs15, epw01, esh12, erpbb17}.
+
+The one- and two-author papers look to obey the rules in Issue \#4, but 
+multi-author ones do not obey:
+
+iii) Papers with three or more authors appear after the dual-authored papers 
+and are arranged chronologically. 
+
+These currently get arranged alphabetically (by second, or higher if necessary, 
+author, instead of by year).
+
+\clearpage
 
 \bibliographystyle{../res-doc}
 \bibliography{test}
