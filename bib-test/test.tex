@@ -7,6 +7,25 @@
 %\usepackage{lineno}
 %\linenumbers
 
+%% ------------------------------------------------------------------------------
+%% Custom commands for this assessment
+\newcommand{\sQuote}[1]{`#1'}
+\newcommand{\dQuote}[1]{``#1''}
+\newcommand{\eqn}[1]{\begin{equation}#1\end{equation}}
+\newcommand{\gfrac}[2]{\genfrac{}{}{}{0}{#1}{#2}}
+%% eor - Show two things with a vertical bar between them. e.g. A|B
+\newcommand{\eor}[2]{{#1$\Vert$#2}}
+%% bM - makes equations larger
+\newcommand{\bM}[1]{\mathlarger{\mathlarger{#1}}}
+%% Allow newline breaks in a table cell:
+%%  syntax is \specialcell{first line\\second line}
+\newcommand{\specialcell}[2][c]{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+\newcommand{\fishname}{Pacific Ocean Perch}
+\newcommand{\sciencename}{Sebastes Alutus}
+%\newcommand{\familyname}{Pleuronectidae}
+%\newcommand{\commonname}{Turbot}
+%% ------------------------------------------------------------------------------
+
 \begin{document}
 
 % \starredchapter{APPENDIX~\thechapter. ASSESSMENT SCHEDULE AND INTERIM YEARS BETWEEN ASSESSMENTS}
@@ -14,22 +33,22 @@
 % \lfoot{\fishname~5ABC}
 % \rfoot{Appendix~\thechapter~-- Interim Years}
 
+Simplest for me to just reference mostly my own papers/assessments as I know of
+some good examples of the issue. 
 
+\citet{eb96} and \citet{eb99} did some stuff. So did \citet{eb01}. 
 
-There is no set schedule for assessments of the POP 5ABC stock, with the most recent three assessments being for the start of 2017 (this assessment), 2010 \citep{esh12} and 2001 (for Goose Island Gully only, extrapolated to the full coast; \citealt{shks01}). It may be expected that the next full stock assessment will therefore be in five to seven years.
+Check how this comes out, since same three authors and the same year! Don't think
+there is a hard rule for that.
+\citet{ebp00a} and \citet{ebp00b} are by someone else, the a and b are hardwired in .bib file.
 
-Many DFO assessments are moving to a multi-year schedule (rather than being conducted every year) to provide stability to harvesters and reduce the frequency of peer-reviewed stock assessments \citep{dfo16}. Consequently, \citet{dfo16} provided guidelines for producing updates for the interim years between full stock assessments. These guidelines include evaluating indicators that are proxies of stock status, and defining trigger values that are `thresholds of an indicator which if crossed would signal a change in stock status that may warrant a re-assessment ahead of schedule or changes to management measures ...'. 
+Also \citet{epb00} a year earlier.
 
-Potential indicators come from the data inputs to the assessment model. The QCS synoptic survey is the only ongoing survey that is explicitly designed to provide an index for groundfish species in 5ABC. The QCS shrimp survey is used in the model, but has a large coefficient of variation and provides a noisy signal that does not appear to closely track the estimated biomass of POP (Figure~E.1) and therefore is not appropriate as a potential interim-year indicator. The otoliths for the ageing data are only analysed when an assessment is due, and so cannot be used on an interim basis. The other model input is the time series of annual catches, which can be updated fairly easily each year. But this is not used in the model as a stock index and so is not a suitable indicator. 
-Similarly, catch-per-unit-effort data are not suitable as an index becuase, 
-particularly in a multi-species fishery, catches of a single species can change
-for a variety of reasons.
+There are more refs \citep{edwa01, edwa08, efbj12}.
 
-Thus, only the QCS synoptic survey appears suitable as a potential indicator. The survey is currently scheduled for 2017, 2019, 2021, ... . However, even though the survey index is a prime input to the model, it is not always an accurate estimate of the estimated spawning biomass (e.g. years 2003 and 2007 Figure E.1). This suggests that a change in the survey index for a year or two may not be representative of a change in the biomass. Waiting for three survey indices means requiring the 2021 survey, by which time (or shortly after) the next full assessment will likely be requested. Also, deriving the survey estimate is not a trivial task (Appendix~B).
+Some assessments with similar authors are \citet{ehs12, ehs14area3CD, ehs14area5DE}; the latter are again the same three authors and same year.
 
-To properly ascertain a suitable trigger point would require simulation testing to ensure that the trigger is not too easily crossed when in fact the biomass has not substantially changed, or it is not crossed when in fact the biomass has substantially changed. In particular, such simulations would have to consider the uncertainty in the survey estimate and the Bayesian uncertainty in the survey catchability parameter ($q_2$). There were not resources available to conduct such simulations. 
-
-We suggest the next full stock assessment be scheduled for 2022, such that there will be three new indices from the QCS synoptic survey and five years of ageing and catch data. For reasons noted above, we are unable to propose indicators that could be monitored in the interim years. But we do note that \emph{advice} for the interim years is explicitly included in this assessment in the form of the decision tables.
+More are \citet{ehs15, eps02, epw01, esh12, erpbb17}.
 
 \bibliographystyle{../res-doc}
 \bibliography{test}
