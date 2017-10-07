@@ -9,7 +9,7 @@ For final CSAP submission of Research Document, check the points in **Bibliograp
 
 **temp** - Andy updating .sty and including a .bst. Separate branch from master so as to not mess up the Herring assessment.
 
-**bit-testing** [typo - was meant to be **bib-testing**] - Andy creating off **temp**, to create a minimal working example to demonstrate the ordering of multi-author papers. Sean will have a stab at fixing the order (Issue #4). 
+**bit-testing** [typo - was meant to be **bib-testing**] - Andy creating off **temp**, to create a minimal working example to demonstrate the ordering of multi-author papers. Sean will have a stab at fixing the order (Issue #4). Done. 
 
 ## Files
 
@@ -19,7 +19,7 @@ For final CSAP submission of Research Document, check the points in **Bibliograp
 
 **resDoc-rh.bst** - this contains code by Rowan Haigh to underline hyperlinks in url or doi fields from your .bib file. Andy does not use these, and so can't really test them. If you want to use them then do a diff on this and **res-doc.bst** and then include the extra bits of code and test it before sharing. Some stuff is commented out and I'm not sure if it has to be.
 
-**bib-test/test.tex** - test file to demonstrate (and hopefully fix) issue #4.
+**bib-test/test.tex** - test file to demonstrate and fix issue #4.
 
 ## Bibliography
 
