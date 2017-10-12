@@ -31,12 +31,7 @@ Issue #4. **Fixed**.
 
 1. For Redbanded Rockfish assessment, the .bbl file incorrectly strips out hyphens in hyphenated first names. See Issue #5. If not fixed then check yourself (and just edit your **.bbl** file if necessary). 
 
-
-## Further CSAS rules
-
-Partly from doing Redbanded Rockfish formatting edits:
-
-1. Arrowtooth Flounder went through as a full latex document. Others, such as Redbanded Rockfish, have been a mixture of Word and Latex (which is a bit more fiddly). If you have to have a mixture then CSAS prefers, say, pages 1-100 to be Word and then pages 101-150 to be Latex (i.e. just one chunk of each). 
+## Web accessibility check
    
 1. To test the encoding part of Web Accessibility (in Adobe Acrobat XI Pro):
 
@@ -47,6 +42,25 @@ Partly from doing Redbanded Rockfish formatting edits:
 	Document - Right-click Tagged - Fix - 'Some difficult pages' okay
 
 	Page Content - expand - Character Encoding shows ones that aren't encoded. Try and fix (have to do in tex not the .pdf; not sure what to do with Chris's current ones). 'A few' are okay with CSAS (10 per 100 pages - see below).
+
+2. Combining two latex .pdf's in Adobe seemed to lose information, but (after doing the above steps) this works:
+	
+	Pages - Insert from file
+
+    seems to retain it (at least for Andy's two POP 2017 appendices).
+
+Two issues that still get flagged are
+
+ - Figures alternate text. However the text is there from using \pdftooltips and gets correctly read out by Adobe read-out-loud, so hopefully this is okay.
+ - Headings - Appropriate nesting; if important is probably an easy manual fix at the end (to do with Appendix title and then first section title).
+
+Failed 'Primary language' and 'Title' are okay - easy to add in manually at the end by CSAP.
+
+## Further CSAS rules
+
+Partly from doing Redbanded Rockfish formatting edits:
+
+1. Arrowtooth Flounder went through as a full latex document. Others, such as Redbanded Rockfish, have been a mixture of Word and Latex (which is a bit more fiddly). If you have to have a mixture then CSAS prefers, say, pages 1-100 to be Word and then pages 101-150 to be Latex (i.e. just one chunk of each). 
 
 1. Tables that break across pages - may or may not be allowed to have the \longtable footer and subsequent header. Brittany is checking (but has now left). Not sure of current status of this.
 
