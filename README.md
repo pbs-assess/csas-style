@@ -17,18 +17,19 @@ For final CSAP submission of Research Document, check the points in **Bibliograp
 
 **res-doc.bst** - bibliography style file
 
-**resDoc-rh.bst** - this contains code by Rowan Haigh to underline hyperlinks in url or doi fields from your .bib file. Andy does not use these, and so can't really test them. If you want to use them then do a diff on this and **res-doc.bst** and then include the extra bits of code and test it before sharing. Some stuff is commented out and I'm not sure if it has to be.
+**resDoc-rh.bst** - this contains code by Rowan Haigh to underline hyperlinks in url or doi fields from your .bib file. Andy does not use these, and so can't really test them. If you want to use them then do a diff on this and **res-doc.bst** and then include the extra bits of code and test it before sharing. Some stuff is commented out and I'm not sure if it has to be. 
+	
 
 **bib-test/test.tex** - test file to demonstrate and fix issue #4.
 
 ## Bibliography
 
 1. May need to re-order some multi-author papers. See
-Issue #4. 
+Issue #4. **Fixed**.
 
-1. Doing http:// links (CSAS wants them to be live and clickable) seems to work automatically when you make a .pdf. They don't have to be underlined. Though I think that has since changed and they don't want the http text visible (just alternate text). For Redbanded I've just taken them all out of the bibliography. People can Google. If you want them in then first check out **resDoc-rh.bst** as noted above.
+1. If you want clickable web links see **resDoc-rh.bst** above, and the hyperlink rule below. 
 
-1. For Redbanded Rockfish assessment, the .bbl file incorrectly strips out hyphens in hyphenated first names. See Issue #5. If not fixed then check yourself. 
+1. For Redbanded Rockfish assessment, the .bbl file incorrectly strips out hyphens in hyphenated first names. See Issue #5. If not fixed then check yourself (and just edit your **.bbl** file if necessary). 
 
 
 ## Further CSAS rules
@@ -54,6 +55,12 @@ Partly from doing Redbanded Rockfish formatting edits:
 1. No side-by-side figures with separate captions; i.e. must all be the same figure.
 
 1. Need Chris's template (from Arrowtooth or Herring presumably) for properly making Table of Contents and labelling Appendices. He keeps that in Latex and so gets the Abstract translation and puts that into .tex, so no Word files at all.
+
+1. The rules are that if you have hyperlinks (anywhere) in your document then the web address is *not* spelled out, so use ```\href``` in latex, for example
+
+         available from \href{http://www.cpc.ncep.noaa.gov}{NOAA}
+
+     They are not required for the references (so it's easiest to leave them out, though see resDoc-rh.bst above if you want them). 
 
 1. Personal communications need a work location also; e.g. (Stephen Wischniowski, Pacific Biological Station, DFO, Nanaimo, BC, pers.~comm.)
 
