@@ -32,7 +32,22 @@ Issue #4. **Fixed**.
 1. For Redbanded Rockfish assessment, the .bbl file incorrectly strips out hyphens in hyphenated first names. See Issue #5. If not fixed then check yourself (and just edit your **.bbl** file if necessary). 
 
 ## Web accessibility check
-   
+
+1. To automatically add alternative text to figures in latex, use (this will go into a minimal working example at some point):
+
+        \begin{figure}
+        \centering 
+        \pdftooltip{
+           \includegraphics[width=\histsize]
+                           {filename.png}}
+           {Figure~\ref{fig:PRsealevel}}
+        \caption{As for Figure \ref{fig:epnp} but for Model 2, for which $\beta_1$ represents the influence of the sea level at Prince Rupert on recruitment.}
+        \label{fig:PRsealevel} 
+        \end{figure}
+
+  
+    The ```\ref{fig:...}``` is the alternate text that gets inserted by ```\pdftooltip```.
+
 1. To test the encoding part of Web Accessibility (in Adobe Acrobat XI Pro):
 
 	View-Tools-Accessibility (Alt V T A)
