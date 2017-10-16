@@ -17,7 +17,7 @@ For final CSAP submission of Research Document, check the points in **Bibliograp
 
 **res-doc.bst** - bibliography style file
 
-**resDoc-rh.bst** - this contains code by Rowan Haigh to underline hyperlinks in url or doi fields from your .bib file. Andy does not use these as they are not required by CSAS (but be consistent in using or not using them), and so can't really test them. If you want to use them then do a diff on this and **res-doc.bst** and then include the extra bits of code and test it before sharing. Some stuff is commented out and I'm not sure if it has to be. 
+**resDoc-rh.bst** - this contains code by Rowan Haigh to underline hyperlinks in url or doi fields from your .bib file. Andy does not use these as they are not required by CSAS (but be consistent in using or not using them), and so can't really test them. If you want to use them then do a diff on this and **res-doc.bst** and then include the extra bits of code and test it before sharing. Some stuff is commented out and I'm not sure if it has to be. See <https://github.com/andrew-edwards/pop-5ABC-17/issues/16> for how Andy compared various version of files.
 	
 **resDocSty-rh.sty** - Rowan's style file which has code that might be required for underlining hyperlinks. Putting here for reference in case someone wants to include it in **res-doc.sty**. Also has info on a font issue that someone cared about in around ~2015 but then isn't important now - Andy not including it **res-doc.sty** in case it messes up other stuff. 
 
