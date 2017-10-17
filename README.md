@@ -39,15 +39,34 @@ Issue #4. **Fixed**.
         \begin{figure}
         \centering 
         \pdftooltip{
-           \includegraphics[width=\histsize]
-                           {filename.png}}
-           {Figure~\ref{fig:PRsealevel}}
-        \caption{As for Figure \ref{fig:epnp} but for Model 2, for which $\beta_1$ represents the influence of the sea level at Prince Rupert on recruitment.}
+                    \includegraphics[width=\histsize]
+                                    {filename.png}
+                   }{Figure~\ref{fig:PRsealevel}}
+        \caption{Caption text...}
         \label{fig:PRsealevel} 
         \end{figure}
 
   
-    The ```\ref{fig:...}``` is the alternate text that gets inserted by ```\pdftooltip```.
+    The ```\ref{fig:...}``` is the alternate text that gets inserted by ```\pdftooltip```. To create a general command for, say, two figures (Andy doing for Yelloweye):
+
+        \newcommand\twofig[3]{ % fig #1 over #2, caption text #3, label is #1
+        \begin{figure}[tp]
+        \centering
+        \pdftooltip{
+                    \begin{tabular}{c}
+                     \includegraphics[width=4.3 in]{#1.png}
+                     \vspace{-20mm}  \\
+                     \includegraphics[width=4.3 in]{#2.png}
+                    \end{tabular}
+                   }{Figure~\ref{fig:#1}} % alt text
+        \caption{#3}
+        \label{fig:#1}
+        \end{figure}
+        \clearpage
+        }
+
+
+
 
 1. To test the encoding part of Web Accessibility (in Adobe Acrobat XI Pro):
 
@@ -80,7 +99,7 @@ Partly from doing Redbanded Rockfish formatting edits:
 
 1. Tables that break across pages - may or may not be allowed to have the \longtable footer and subsequent header. Brittany is checking (but has now left). Not sure of current status of this.
 
-1. No dotted lines in Tables or (I think) vertical lines.
+1. No dotted lines in Tables, apparently vertical lines are okay.
 
 1. No side-by-side figures with separate captions; i.e. must all be the same figure.
 
@@ -94,11 +113,16 @@ Partly from doing Redbanded Rockfish formatting edits:
 
 1. Personal communications need a work location also; e.g. (Stephen Wischniowski, Pacific Biological Station, DFO, Nanaimo, BC, pers.~comm.)
 
-1. Postscript files (**.eps**) caused issues with screen readers reading out the axes labels etc. Seems that **.png** do not, so use those instead with **\includegraphics**. Damn - **.pdf** apparently don't work either. Andy now using **pdflatex** (and viewing in ghostview) rather than **latex** and **dvips**. And to convert existing **.pdf** files to **.png** this is working fine, using ImageMagick:
+1. Postscript (**.eps**) and **.pdf** files cause issues with screen readers reading out the axes labels etc. Seems that **.png** do not, so use those instead with **\includegraphics**. Andy now using **pdflatex** (can refresh resulting **.pdf** in ghostview) rather than **latex** and **dvips**. 
 
-		magick convert -density 600 plot_Y_obs.pdf plot_Y_obs.png
+    And to convert existing **.pdf** files to **.png** this is working fine, using ImageMagick:
 
-	Resolution almost as good as **.pdf**, with the resulting **.png** only 62kB. Works for converting **.eps** also.
+        magick convert -density 600 figname.pdf figname.png
+
+	Resolution almost as good as **.pdf**, with the resulting **.png** only 62kB. For converting **.eps** also it seems best to convert to **.pdf** then to **.png** (Andy's experience for Yelloweye), i.e.
+
+        magick convert -density 600 figname.eps figname.pdf
+        magick convert -density 600 figname.pdf figname.png
 
 ## Notes and email from Brittany (ex-CSAP formatting expert) 
 

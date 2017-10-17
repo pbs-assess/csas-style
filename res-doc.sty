@@ -534,6 +534,12 @@
 \let\oldsum\sum
 \DeclareMathOperator*{\summ}{\scalerel*{\Sigma}{\oldsum}}
 \renewcommand{\sum}{\summ}
+
+%% To create alternate text for figures using 
+%%   \pdftooltip{ \includegraphics{fig-file} }
+%%              {Figure~\ref{fig:haida}}
+\usepackage{pdfcomment}
+
 %% ------------------------------------------------------------------------------
 
 %% ------------------------------------------------------------------------------
