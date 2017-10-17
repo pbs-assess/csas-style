@@ -95,6 +95,8 @@ Failed 'Primary language' and 'Title' are okay - easy to add in manually at the 
 
 Partly from doing Redbanded Rockfish formatting edits:
 
+1. Capitalise \section and \subsection headings (but not \subsubsection or un-numbered ones). You have to manually capitalise them so that they appear capitalised in the Table of Contents and the **.pdf** bookmarks.
+ 
 1. Arrowtooth Flounder went through as a full latex document. Others, such as Redbanded Rockfish, have been a mixture of Word and Latex (which is a bit more fiddly). If you have to have a mixture then CSAS prefers, say, pages 1-100 to be Word and then pages 101-150 to be Latex (i.e. just one chunk of each). 
 
 1. Tables that break across pages - may or may not be allowed to have the \longtable footer and subsequent header. Brittany is checking (but has now left). Not sure of current status of this.
