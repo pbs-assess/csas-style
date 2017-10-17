@@ -78,16 +78,16 @@ Issue #4. **Fixed**.
 
 	Page Content - expand - Character Encoding shows ones that aren't encoded. Try and fix (have to do in tex not the .pdf; not sure what to do with Chris's current ones). 'A few' are okay with CSAS (10 per 100 pages - see below).
 
-2. Combining two latex .pdf's in Adobe seemed to lose information, but (after doing the above steps) this works:
+2. Combining two latex .pdf's in Adobe seemed to lose information, but (after doing the above steps) this works in Acrobat:
 	
-	Pages - Insert from file
+	    Pages - Insert from file
 
-    seems to retain it (at least for Andy's two POP 2017 appendices).
+    This seems to retain bookmarks etc. (at least for Andy's two POP 2017 appendices).
 
 Two issues that still get flagged are
 
  - Figures alternate text. However the text is there from using \pdftooltips and gets correctly read out by Adobe read-out-loud, so hopefully this is okay.
- - Headings - Appropriate nesting; if important is probably an easy manual fix at the end (to do with Appendix title and then first section title).
+ - Headings - Appropriate nesting; if important is probably an easy manual fix at the end (to do with Appendix title and then first section title - this may be fixed now).
 
 Failed 'Primary language' and 'Title' are okay - easy to add in manually at the end by CSAP.
 
@@ -101,7 +101,7 @@ Partly from doing Redbanded Rockfish formatting edits:
 
 1. Tables that break across pages - may or may not be allowed to have the \longtable footer and subsequent header. Brittany is checking (but has now left). Not sure of current status of this.
 
-1. No dotted lines in Tables, apparently vertical lines are okay.
+1. No dotted lines in Tables, apparently vertical lines are now okay.
 
 1. No side-by-side figures with separate captions; i.e. must all be the same figure.
 
