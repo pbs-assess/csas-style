@@ -214,7 +214,9 @@
 {\centering\normalfont\large\bfseries\MakeUppercase}}
 
 %% Section headings in appendices must be left-justified not centered;
-%%  this is same as \section above but without \centering
+%%  this is same as \section above but without \centering.
+%%  \section is now redefined in \Appendices command, so \section can
+%%  be used as normal (or use \appsection) in appendices.
 \newcommand{\appsection}{\@startsection
 {section}{1}{0mm}                 %% name, level, indent
 {-3.5ex \@plus -1ex \@minus -.2ex}%% beforeskip
@@ -277,6 +279,8 @@
   \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
   %% Set up first Appendix heading value
   \setcounter{chapter}{0}
+  %% Section headings now use \appsection command
+  \renewcommand{\section}{\appsection}
 }
 
 %% Changes the name of the bibliography to REFERENCES.
