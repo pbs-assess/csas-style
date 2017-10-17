@@ -124,6 +124,8 @@ Partly from doing Redbanded Rockfish formatting edits:
         magick convert -density 600 figname.eps figname.pdf
         magick convert -density 600 figname.pdf figname.png
 
+    Doing this, Yelloweye original **bcaKeepSerA.eps** was 12kb, **.pdf** is 1Mb, **.png** is 87kb.
+
 ## Notes and email from Brittany (ex-CSAP formatting expert) 
 
 **Andy just copying these and briefly editing here for now so that we have one copy. Will need tidying up, and some things have likely been automatically fixed with our .sty file.**
