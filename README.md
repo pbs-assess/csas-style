@@ -78,17 +78,22 @@ Issue #4. **Fixed**.
 
 	Page Content - expand - Character Encoding shows ones that aren't encoded. Try and fix (have to do in tex not the .pdf; not sure what to do with Chris's current ones). 'A few' are okay with CSAS (10 per 100 pages - see below).
 
-2. Combining two latex .pdf's in Adobe seemed to lose information, but (after doing the above steps) this works in Acrobat:
-	
-	    Pages - Insert from file
+2. Combining two latex .pdf's in Adobe when doing 
+     
+        File – Create – Combine files into a single .pdf
 
-    This seems to retain bookmarks etc. (at least for Andy's two POP 2017 appendices).
+    seems to lose information such as bookmarks. However, having one file open (at its final page) and then doing: 
+	
+        Pages - Insert from file
+
+    seems to retain bookmarks etc. (at least for Andy's two POP 2017 appendices).
 
 Two issues that still get flagged are
 
- - Figures alternate text. However the text is there from using \pdftooltips and gets correctly read out by Adobe read-out-loud, so hopefully this is okay.
- - Headings - Appropriate nesting; if important is probably an easy manual fix at the end (to do with Appendix title and then first section title - this may be fixed now).
-
+ - Figures alternate text. However the text is there from using \pdftooltips, can be verified by hovering a mouse over a figure, and gets correctly read out by Adobe read-out-loud. So hopefully this is okay.
+ - Headings - Appropriate nesting; if important is probably an easy manual fix at the end (to do with Appendix title and then first section title?).
+ - For Yelloweye Andy had one Table whose headings didn't get tagged properly. Not clear why.
+ 
 Failed 'Primary language' and 'Title' are okay - easy to add in manually at the end by CSAP.
 
 ## Further CSAS rules
