@@ -344,6 +344,7 @@
   \vspace{-6mm}
   %% Add the appendix name to the table of contents.
   \addcontentsline{toc}{section}{R\'ESUM\'E}\nonumsection*{R\'ESUM\'E}
+  \label{TRlastRoman}
 }
 
 %% Make a landscape page properly, with the page numbers and bars rotated to
@@ -558,6 +559,11 @@
 \newcommand{\Bmsy}{B_\mathrm{MSY}}
 \newcommand{\umsy}{u_\mathrm{MSY}}
 %% ------------------------------------------------------------------------------
+
+\fancypagestyle{nofooter}{%
+\fancyfoot{}%
+}
+
 %% ------------------------------------------------------------------------------
 %% Frontmatter: set up first few pages including the title page, TOC, and abstract
 %% Note that this requires some custom variables that you need to set in the main
@@ -575,7 +581,7 @@
 
 \vspace{-1.5mm}
 
-\textbf{Research Document \rdYearPub{}/\rdNumber{}}\\
+\textbf{Research Document \rdYear{}/\rdNumber{}}\\
 
 \vspace{0.2cm}
 
@@ -591,7 +597,7 @@
 
 \vspace{.35cm}
 
-\rdAuthAddress{}
+\rdAuthAddy{}
 
 \end{center}
 \vspace*{\fill}
@@ -599,7 +605,7 @@
 \hrule
 
 \vspace{-4.0mm}
-\parbox{9cm}{\rdDateMeeting{}}%
+\parbox{9cm}{\rdMonth{} \rdYear{}}%
 \begin{minipage}[t]{7.48cm}
 \flushright
 \includegraphics[width=3.54cm]{../doc/title-images/title-footer.png}%
@@ -637,7 +643,7 @@ Ottawa ON K1A 0E6\\
 \includegraphics[scale=0.96]{../doc/title-images/recycle.png}
 
 \vspace{-3mm}
-\textcopyright\ Her Majesty the Queen in Right of Canada, \rdYearPub{}\\
+\textcopyright\ Her Majesty the Queen in Right of Canada, \rdYear{}\\
 ISSN 1919-5044
 \end{center}
 
@@ -647,7 +653,7 @@ ISSN 1919-5044
 \vspace{0.2cm}
 \hangindent=0.6cm \rdAuthRev{}
 \rdTitle{}.
-DFO Can.\ Sci.\ Advis.\ Sec.\ Res.\ Doc. \rdYearPub{}/\rdNumber{}.
+DFO Can.\ Sci.\ Advis.\ Sec.\ Res.\ Doc. \rdYear{}/\rdNumber{}.
 \pageref{TRlastRoman}{} + \pageref{LastPage} p.
 \vspace*{\fill}
 
@@ -655,10 +661,8 @@ DFO Can.\ Sci.\ Advis.\ Sec.\ Res.\ Doc. \rdYearPub{}/\rdNumber{}.
 
 \clearpage
 
-% TOC
 \TableOfContents
 
-% Main body
 \Main
 
 }% End of frontmatter
