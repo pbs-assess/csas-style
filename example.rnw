@@ -1,8 +1,11 @@
 % Document setup
 \documentclass[11pt]{book}
 
+% Location of the csas-style repository (with style file, images, bib style file, ..)
+\newcommand{\locRepo}{.}
+
 % Use the style file in the csas-style repository:
-\usepackage{res-doc} % refers to res-doc.sty in this folder; adjust path as needed
+\usepackage{\locRepo/res-doc}  % refers to res-doc.sty in this folder; adjust path as needed
 
 % Multi-letter identifier (i.e., multi-character variable such as `SB`)
 \newcommand{\mli}[1]{\mathit{#1}}
