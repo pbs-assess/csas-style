@@ -1,0 +1,14 @@
+\label{chap:parameters}
+\starredchapter{APPENDIX~\thechapter. PARAMETERS ESTIMATED INDEPENDENTLY}
+\lfoot{\fishName}
+\rfoot{Appendix~\thechapter~-- Parameters Estimated Independently}
+
+\begin{resdoclist}
+\item Growth rates
+\item Natural mortality
+\item Maturity-at-age?
+\item Other?
+\end{resdoclist}
+
+% Dirty hack to maintain correct appendix letters
+\newpage

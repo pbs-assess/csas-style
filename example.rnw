@@ -57,5 +57,12 @@ Nanaimo, British Columbia, V9T 6N7, Canada
 <<introduction, child='maindoc/1_introduction.rnw'>>=
 @
 
+% Start the appendices
+\Appendices
+
+\refstepcounter{chapter}
+<<parameters, child='app/A_parameters.rnw'>>=
+@
+
 % Fin
 \end{document}
