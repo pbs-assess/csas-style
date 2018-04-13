@@ -6,3 +6,4 @@ del example.bbl
 del example.tex
 del example.toc
 del example.upa
+rmdir /S /Q figure

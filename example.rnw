@@ -73,6 +73,9 @@ library( tidyverse )
 <<tables, child='maindoc/2_tables.rnw'>>=
 @
 
+<<figures, child='maindoc/3_figures.rnw'>>=
+@
+
 % Start the appendices
 \Appendices
 
