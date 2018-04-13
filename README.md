@@ -1,15 +1,13 @@
 # csas-style
 Latex style files for CSAS Research Documents
 
+Refer to **res-doc.sty** and **res-doc.bst** from your own document. Please do *not* put the text for your document in this repository - this one is just to share and update the style files. 
+
+At some point there will be a minimum working example (based on recent POP and herring assessments).
+
 # Checklist
 
 For final CSAP submission of Research Document, check the points in **Bibliography** and **Further CSAS rules** below.
-
-## Branches
-
-**temp** - Andy updating .sty and including a .bst. Separate branch from master so as to not mess up the Herring assessment.
-
-**bit-testing** [typo - was meant to be **bib-testing**] - Andy creating off **temp**, to create a minimal working example to demonstrate the ordering of multi-author papers. Sean will have a stab at fixing the order (Issue #4). Done. 
 
 ## Files
 
@@ -34,7 +32,7 @@ Issue #4. **Fixed**.
 
 ## Web accessibility check
 
-1. To automatically add alternative text to figures in latex, use (this will go into a minimal working example at some point):
+1. To automatically add alternative text to figures in latex, use ```\pdftooltip```, based on the following (which will go into a minimal working example at some point):
 
         \begin{figure}
         \centering 
