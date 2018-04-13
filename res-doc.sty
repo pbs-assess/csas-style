@@ -12,11 +12,11 @@
 %% subsec: subsection
 %%    fig: figure
 %%    tab: table
-%%     eq: equation       
+%%     eq: equation
 %%    lst: code listing
 %%    itm: enumerated list item
 %%    app: appendix subsection
-%% No code will default to an equation, e.g. \label{length-weight} and 
+%% No code will default to an equation, e.g. \label{length-weight} and
 %%  \ref{length-weight}, which is the LaTeX standard. But be consistent in
 %%  using eq: or not (at least within an Appendix).
 %%
@@ -29,7 +29,7 @@
 %%   latex PACKAGE_NAME.ins
 %%  which will create the .sty files from the .ins files.
 %%  Now you have to refresh FNDB:
-%% Go to Start -> All Programs -> MiKTeX X.x -> Maintenance(Admin) -> 
+%% Go to Start -> All Programs -> MiKTeX X.x -> Maintenance(Admin) ->
 %% MikTex Settings(Admin)
 
 %% Notes on installing the required Arial font:
@@ -522,6 +522,20 @@
 \usepackage{booktabs}
 %% For cells spanning multiple rows in xtables
 \usepackage{multirow}
+% To do 'for' loops in latex
+\usepackage{pgffor}
+% For float barriers
+\usepackage{placeins}
+% Include PDFs (i.e., whole page)
+\usepackage{pdfpages}
+
+\usepackage{textcomp}
+\usepackage{lastpage}
+
+% https://tex.stackexchange.com/questions/311132/how-to-style-hrefs-underlined-and-coloured-throughout-the-document
+\usepackage{xcolor,soul}
+\usepackage{pdfcomment}
+
 
 %% Allows the french abstract to be pasted in with special characters intact
 %% Make sure maindoc.rnw is saved in utf8 encoding.
@@ -539,8 +553,8 @@
 \DeclareMathOperator*{\summ}{\scalerel*{\Sigma}{\oldsum}}
 \renewcommand{\sum}{\summ}
 
-%% To create alternate text for figures using 
-%%   \pdftooltip{ \includegraphics{fig-file} } 
+%% To create alternate text for figures using
+%%   \pdftooltip{ \includegraphics{fig-file} }
 %%              {Figure~\ref{fig:haida}}   (see longer examples in readme)
 \usepackage{pdfcomment}
 
@@ -557,4 +571,143 @@
 
 \newcommand{\Bmsy}{B_\mathrm{MSY}}
 \newcommand{\umsy}{u_\mathrm{MSY}}
+
+% Multi-letter identifier (i.e., multi-character variable such as `SB`)
+\newcommand{\mli}[1]{\mathit{#1}}
+% Better treatment of input (no extra trailing space)
+\newcommand{\inputsp}[1]{\input{#1}\unskip}
+
+% Custom commands:
+\newcommand{\sQuote}[1]{`#1'}
+\newcommand{\dQuote}[1]{``#1''}
+\newcommand{\eqn}[1]{\begin{equation}#1\end{equation}}
+\newcommand{\gfrac}[2]{\genfrac{}{}{}{0}{#1}{#2}}
+
+% eor - Show two things with a vertical bar between them. e.g. A|B
+\newcommand{\eor}[2]{{#1$\Vert$#2}}
+
+% bM - makes equations larger
+\newcommand{\bM}[1]{\mathlarger{\mathlarger{#1}}}
+%% ------------------------------------------------------------------------------
+
+\fancypagestyle{nofooter}{%
+\fancyfoot{}%
+}
+
+%% ------------------------------------------------------------------------------
+%% Frontmatter: set up first few pages including the title page, TOC, and abstract
+%% Note that this requires some custom variables that you need to set in the main
+%% document (e.g., title, authors, year, report number)
+\def\frontmatter{%
+
+\thispagestyle{empty}
+
+\newgeometry{top=0.5in,bottom=0.6in,left=1in,right=1in}
+
+\includegraphics[width=9.14cm]{\locRepo/images/title-header.png}
+
+\textbf{Canadian Science Advisory Secretariat (CSAS)}
+\vspace{0.5mm}
+
+\hrule
+
+\vspace{-1.5mm}
+
+\textbf{Research Document \rdYear{}/\rdNumber{}}\\
+
+\vspace{0.2cm}
+
+\textbf{Pacific Region}
+
+\vspace*{\fill}
+\begin{center}
+
+\textbf{\rdTitle{}}
+\vspace{.35cm}
+
+\rdAuth{}
+
+\vspace{.35cm}
+
+\rdAuthAddy{}
+
+\end{center}
+\vspace*{\fill}
+
+\hrule
+
+\vspace{-4.0mm}
+\parbox{9cm}{\rdMonth{} \rdYear{}}%
+\begin{minipage}[t]{7.48cm}
+\flushright
+\includegraphics[width=3.54cm]{\locRepo/images/title-footer.png}%
+\end{minipage}
+
+\clearpage
+
+\restoregeometry
+
+\vspace*{\fill}
+
+\begin{center}
+\textbf{Foreword}
+\end{center}
+\vspace{-1.5mm}
+
+This series documents the scientific basis for the evaluation of aquatic resources and ecosystems in Canada.
+As such, it addresses the issues of the day in the time frames required and the documents it contains are not intended as definitive statements on the subjects addressed but rather as progress reports on ongoing investigations.
+
+Research documents are produced in the official language in which they are provided to the Secretariat.
+
+\vspace{1.5mm}
+
+\begin{center}
+\textbf{Published by:\\}
+\vspace{0.2cm}
+Fisheries and Oceans Canada\\
+Canadian Science Advisory Secretariat\\
+200 Kent Street\\
+Ottawa ON K1A 0E6\\
+\vspace{0.17cm}
+
+\href{http://www.dfo-mpo.gc.ca/csas-sccs/}{http://www.dfo-mpo.gc.ca/csas-sccs/}\\
+\href{mailto://csas-sccs@dfo-mpo.gc.ca}{csas-sccs@dfo-mpo.gc.ca}
+
+\vspace{-3mm}
+\includegraphics[scale=0.96]{\locRepo/images/recycle.png}
+
+\vspace{-3mm}
+\textcopyright\ Her Majesty the Queen in Right of Canada, \rdYear{}\\
+ISSN 1919-5044
+\end{center}
+
+\vspace{-3mm}
+
+\textbf{Correct citation for this publication:}\\
+\vspace{0.2cm}
+\hangindent=0.6cm \rdAuthRev{}
+\rdTitle{}.
+DFO Can.\ Sci.\ Advis.\ Sec.\ Res.\ Doc. \rdYear{}/\rdNumber{}.
+\pageref{TRlastRoman}{} + \pageref{LastPage} p.
+\vspace*{\fill}
+
+\thispagestyle{nofooter}
+
+\clearpage
+
+\TableOfContents
+
+\Main
+
+\rdAbstract{}
+
+\label{TRlastRoman}
+
+\clearpage
+
+% The next two lines are required to start off numbering
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+}% End of frontmatter
 %% ------------------------------------------------------------------------------

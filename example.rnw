@@ -1,0 +1,61 @@
+% Document setup
+\documentclass[11pt]{book}
+
+% Location of the csas-style repository: adjust path as needed
+\newcommand{\locRepo}{.}
+
+% Use the style file in the csas-style repository (res-doc.sty)
+\usepackage{\locRepo/res-doc}
+
+% Headers and footers
+\lhead{Draft working paper --- Do not cite or circulate}
+% \lhead{}
+\rhead{}
+
+%%%% Commands for title page etc %%%%%
+
+% Publication year
+\newcommand{\rdYear}{YYYY}
+
+% Publication month
+\newcommand{\rdMonth}{Month}
+
+% Report number
+\newcommand{\rdNumber}{XXX}
+
+% Title
+\newcommand{\rdTitle}{Title Here \fishName\ (\scienceName)}
+
+% Author names separated by commas and ', and' for the last author in the format 'M.H. Grinnell' (use \textsuperscript{n} for addresses)
+\newcommand{\rdAuth}{A.B. Lastname\textsuperscript{1}, C.D. Lastname\textsuperscript{1}}
+
+% Author names reversed separated by commas in the format 'Grinnell, M.H.'
+\newcommand{\rdAuthRev}{Lastname, A.B., Lastname, C.D.}
+
+% Author addresses (use \textsuperscript{n})
+\newcommand{\rdAuthAddy}{
+\textsuperscript{1}Pacific Biological Station\\
+Fisheries and Oceans Canada, 3190 Hammond Bay Road\\
+Nanaimo, British Columbia, V9T 6N7, Canada
+}
+
+% Name of file with abstract and resume (see \abstract and \frenchabstract for requirements)
+\newcommand{\rdAbstract}{\Sexpr{knit_child('maindoc/0_abstract.rnw')}}
+
+%%%% End of title page commands %%%%%
+
+% Let it begin
+\begin{document}
+
+% More custom variables
+<<variables, child='maindoc/99_variables.rnw'>>=
+@
+
+% Make the first few pages
+\frontmatter
+
+<<introduction, child='maindoc/1_introduction.rnw'>>=
+@
+
+% Fin
+\end{document}
