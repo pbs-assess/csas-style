@@ -47,6 +47,13 @@ Nanaimo, British Columbia, V9T 6N7, Canada
 % Let it begin
 \begin{document}
 
+<<setup, echo=FALSE, message=FALSE>>=
+# Required package(s)
+library( knitr )
+library( xtable )
+library( tidyverse )
+@
+
 % More custom variables
 <<variables, child='maindoc/99_variables.rnw'>>=
 @
@@ -62,6 +69,9 @@ Nanaimo, British Columbia, V9T 6N7, Canada
 \bibliographystyle{./res-doc}
 \bibliography{./small}
 \clearpage
+
+<<tables, child='maindoc/2_tables.rnw'>>=
+@
 
 % Start the appendices
 \Appendices

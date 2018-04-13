@@ -1,0 +1,14 @@
+\section{TABLES}
+
+<<tableOptions, echo=FALSE>>=
+# Latex bold (e.g., for table column names)
+boldLatex <- function( x )  paste( '\\textbf{', x, '}', sep ='' )
+@
+
+
+<<iris, echo=FALSE, results='asis'>>=
+nShow <- 10
+irisSm <- iris %>% head( nShow )
+xIris <- xtable( irisSm, caption="This is the first few rows of the `iris' data.", label="tabIris" )
+print( xIris, include.rownames=FALSE, sanitize.colnames.function=boldLatex, booktabs=TRUE )
+@

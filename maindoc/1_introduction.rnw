@@ -8,3 +8,5 @@
 \end{resdoclist}
 
 This is a citation \citep{kronlund2017}.
+
+This is a table (Table \ref{tabIris}).
