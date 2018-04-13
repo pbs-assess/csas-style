@@ -57,6 +57,12 @@ Nanaimo, British Columbia, V9T 6N7, Canada
 <<introduction, child='maindoc/1_introduction.rnw'>>=
 @
 
+% References: adjust paths as needed
+\clearpage
+\bibliographystyle{./res-doc}
+\bibliography{./small}
+\clearpage
+
 % Start the appendices
 \Appendices
 
