@@ -575,7 +575,7 @@ FUNCTION {format.note}
 }
 
 FUNCTION {format.title}
-{ title
+{ title "t" change.case$
   "title" bibinfo.check
 }
 FUNCTION {format.full.names}
