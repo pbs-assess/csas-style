@@ -10,3 +10,13 @@
 This is a citation \citep{kronlund2017}.
 
 This is a table (Table \ref{tabIris}), and this is a figure (Figure \ref{fig:plotCatch}).
+
+This is how we calculate catch
+\begin{equation}\label{eqCatch}
+C = \frac{F}{F+M}\left(1-e^{\left(F+M\right)T}N_0\right)
+\end{equation}
+where
+$N_0$ is initial population abundance, 
+$F$ is fishing mortality,
+$M$ is natural mortality, and
+$T$ is the time period.
