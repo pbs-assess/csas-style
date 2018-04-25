@@ -29,10 +29,10 @@
 \newcommand{\rdTitle}{Title Here \fishName\ (\scienceName)}
 
 % Author names separated by commas and ', and' for the last author in the format 'M.H. Grinnell' (use \textsuperscript{n} for addresses)
-\newcommand{\rdAuth}{A.B. Lastname\textsuperscript{1}, C.D. Lastname\textsuperscript{1}}
+\newcommand{\rdAuth}{First M. Lastname\textsuperscript{1}, First D. Lastname\textsuperscript{1}}
 
 % Author names reversed separated by commas in the format 'Grinnell, M.H.'
-\newcommand{\rdAuthRev}{Lastname, A.B., Lastname, C.D.}
+\newcommand{\rdAuthRev}{Lastname, F.M., Lastname, F.D.}
 
 % Author addresses (use \textsuperscript{n})
 \newcommand{\rdAuthAddy}{
