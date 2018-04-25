@@ -9,7 +9,7 @@
 
 This is a citation \citep{kronlund2017}.
 
-This is a table (Table \ref{tabIris}), and this is a figure (Figure \ref{fig:plotCatch}).
+This is a table (Table \ref{tabCatch}), and this is a figure (Figure \ref{fig:plotCatch}).
 
 More information can be found in Appendix \ref{chap:parameters}.
 
