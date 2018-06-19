@@ -1,0 +1,10 @@
+\section{FIGURES}
+
+<<plotCatch, echo=FALSE, dev='png', fig.width=6, fig.height=4, dpi=600, fig.cap="Annual catch.", fig.pos="H">>=
+df <- tibble( Year=2000:2018, Catch=rnorm(n=19, mean=10, sd=1) )
+plotCatch <- ggplot( data=df, aes(x=Year, y=Catch) ) +
+  geom_point( size=3 ) +
+  geom_line( ) +
+  theme_bw( )
+print( plotCatch )
+@

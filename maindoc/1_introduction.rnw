@@ -7,4 +7,10 @@
 \item What is the timeframe for the decision?
 \end{resdoclist}
 
+<<<<<<< HEAD
 \citep{ricker1954}
+=======
+This is a citation \citep{kronlund2017}.
+
+This is a table (Table \ref{tabIris}), and this is a figure (Figure \ref{fig:plotCatch}).
+>>>>>>> mgrinnell/frontmatter
