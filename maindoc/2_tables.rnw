@@ -7,8 +7,9 @@ boldLatex <- function( x )  paste( '\\textbf{', x, '}', sep ='' )
 
 
 <<iris, echo=FALSE, results='asis'>>=
-nShow <- 10
-irisSm <- iris %>% head( nShow )
-xIris <- xtable( irisSm, caption="This is the first few rows of the `iris' data.", label="tabIris" )
-print( xIris, include.rownames=FALSE, sanitize.colnames.function=boldLatex, booktabs=TRUE, caption.placement="top" )
+catch <- tibble( Year=2000:2018, Catch=rnorm(n=19, mean=10, sd=1) )
+xCatch <- xtable( catch, caption="Annual catch.", label="tabCatch" )
+print( xCatch, include.rownames=FALSE, sanitize.colnames.function=boldLatex, booktabs=TRUE, caption.placement="top" )
 @
+
+\newpage

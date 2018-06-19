@@ -1,7 +1,9 @@
 \label{chap:parameters}
 \starredchapter{APPENDIX~\thechapter. PARAMETERS ESTIMATED INDEPENDENTLY}
 \lfoot{\fishName}
-\rfoot{Appendix~\thechapter~-- Parameters Estimated Independently}
+\rfoot{Appendix~\thechapter~-- Parameters}
+
+Here we discuss parameters estimated outside the model:
 
 \begin{resdoclist}
 \item Growth rates
@@ -9,6 +11,10 @@
 \item Maturity-at-age?
 \item Other?
 \end{resdoclist}
+
+\appsection{GROWTH RATES}
+
+Interesting facts about growth.
 
 % Dirty hack to maintain correct appendix letters
 \newpage
