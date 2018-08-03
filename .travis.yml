@@ -10,7 +10,7 @@ warnings_are_errors: false
 
 before_install:
   - source ./travis-source/texlive.sh
-  - tlmgr install ncctools algorithmicx textpos linegoal import arydshln pdfcomment datetime2
+  - tlmgr install ncctools algorithmicx textpos linegoal import arydshln pdfcomment datetime2 tracklang
   - tlmgr update --all
   - sudo apt-get update
   - sudo apt-get install texlive-bibtex-extra
