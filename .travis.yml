@@ -10,7 +10,7 @@ warnings_are_errors: false
 
 before_install:
   - source ./travis-source/texlive.sh
-  - tlmgr install natbib hyperref bookmark nccmath pagewise fancyhdr captio tocloft epsfig graphicx pdflscape textpos enumerate enumitem algorithm algpseudocode linegoal cite longtable,array import graphicx verbatim fancyvrb xifthen color colortbl arydshln parskip hypcap subfig relsize booktabs multirow pgffor placeins pdfpages textcomp lastpage xcolor soul pdfcomment inputenc fontenc scalerel
+  - tlmgr install ncctools algorithmicx
   - tlmgr update --all
   - sudo apt-get update
   - sudo apt-get install texlive-bibtex-extra
