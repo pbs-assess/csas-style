@@ -6,9 +6,9 @@ boldLatex <- function( x )  paste( '\\textbf{', x, '}', sep ='' )
 @
 
 
-<<iris, echo=FALSE, results='asis'>>=
+<<annual-catch, echo=FALSE, results='asis'>>=
 catch <- tibble( Year=2000:2018, Catch=rnorm(n=19, mean=10, sd=1) )
-xCatch <- xtable( catch, caption="Annual catch.", label="tabCatch" )
+xCatch <- xtable( catch, caption="Annual catch.", label="tab:catch" )
 print( xCatch, include.rownames=FALSE, sanitize.colnames.function=boldLatex, booktabs=TRUE, caption.placement="top" )
 @
 

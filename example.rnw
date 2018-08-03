@@ -66,13 +66,9 @@ library( tidyverse )
 <<introduction, child='maindoc/1_introduction.rnw'>>=
 @
 
-<<<<<<< HEAD
-\bibliography{example}
-=======
 % References: adjust paths as needed
 \clearpage
-\bibliographystyle{./res-doc}
-\bibliography{./small}
+\bibliography{./example}
 \clearpage
 
 <<tables, child='maindoc/2_tables.rnw'>>=
@@ -87,7 +83,6 @@ library( tidyverse )
 \refstepcounter{chapter}
 <<parameters, child='app/A_parameters.rnw'>>=
 @
->>>>>>> mgrinnell/frontmatter
 
 % Fin
 \end{document}
