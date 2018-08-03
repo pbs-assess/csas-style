@@ -27,7 +27,7 @@ install: echo Installation step #do not remove this line!
 #    - tlmgr update biber
 
 script:
-  - Rscript -e "knitr::knit('example.rnw')"
+  - Rscript -e "library('knitr');knitr::knit('example.rnw')"
   - pdflatex example.tex
   - bibtex example.tex
   - pdflatex example.tex
