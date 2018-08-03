@@ -1,5 +1,6 @@
-# csas-style
-Latex style files for CSAS Research Documents
+# csas-style: Latex style files for CSAS Research Documents
+
+[![Travis build status](https://travis-ci.org/pbs-assess/csas-style.svg?branch=master)](https://travis-ci.org/pbs-assess/csas-style)
 
 Refer to **res-doc.sty** and **res-doc.bst** from your own document. Please do *not* put the text for your document in this repository - this one is just to share and update the style files. 
 

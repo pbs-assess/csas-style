@@ -3,6 +3,8 @@ language: c
 # To build on OSX, switch the previous line to
 # language: objective-c
 
+sudo: required
+
 script:
   - Rscript -e "knitr::knit('example.Rnw')"
     - pdflatex example
