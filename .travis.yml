@@ -28,10 +28,10 @@ install: echo Installation step #do not remove this line!
 
 script:
   - Rscript -e "library('knitr');knitr::knit('example.rnw')"
-  - pdflatex example.tex
-  - bibtex example.tex
-  - pdflatex example.tex
-  - pdflatex example.tex
+  - pdflatex example
+  - bibtex example
+  - pdflatex example
+  - pdflatex example
 
 # after_success: tools/deploy.sh
 
