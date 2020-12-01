@@ -2,6 +2,8 @@
 
 [![Travis build status](https://travis-ci.org/pbs-assess/csas-style.svg?branch=master)](https://travis-ci.org/pbs-assess/csas-style)
 
+This repository has been archived. The style files are now being maintained in https://github.com/pbs-assess/csasdown and you should go there for updates.
+
 Refer to **res-doc.sty** and **res-doc.bst** from your own document. Please do *not* put the text for your document in this repository - this one is just to share and update the style files. 
 
 At some point there will be a minimum working example (based on recent POP and herring assessments).
